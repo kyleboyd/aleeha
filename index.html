@@ -10,6 +10,45 @@
         
         <style>
         .blue {background-color: #E5F4FB;}
+        
+        .form-radio
+            {
+                 -webkit-appearance: none;
+                 -moz-appearance: none;
+                 appearance: none;
+                 display: inline-block;
+                 position: relative;
+                 background-color: #E5F4FB;
+                 color: #666;
+                 top: 10px;
+                 height: 30px;
+                 width: 30px;
+                 border: 0;
+                 border-radius: 50px;
+                 cursor: pointer;     
+                 margin-right: 7px;
+                 outline: none;
+            }
+            .form-radio:checked::before
+            {
+                 position: absolute;
+                 font: 13px/1 'Open Sans', sans-serif;
+                 left: 11px;
+                 top: 7px;
+                 content: '\02143';
+                 transform: rotate(40deg);
+            }
+            .form-radio:hover
+            {
+                 background-color: #f7f7f7;
+            }
+            .form-radio:checked
+            {
+                 background-color: #f1f1f1;
+            }
+           
+                
+            
         </style>
         
     </head>
@@ -90,19 +129,19 @@
                     <div class="form-group">
                     <label for="inputEmail4">Gender </label>
                     <div class="form-check">
-                      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                      <input class="form-check-input form-radio" type="radio" name="demo" id="radio-one" value="option1" checked>
                       <label class="form-check-label" for="exampleRadios1">
                         Male
                       </label>
                     </div>
                     <div class="form-check">
-                      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                      <input class="form-check-input form-radio" type="radio" name="demo" id="radio-two" value="option2">
                       <label class="form-check-label" for="exampleRadios2">
                         Female
                       </label>
                     </div>
                     <div class="form-check">
-                      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+                      <input class="form-check-input form-radio" type="radio" name="demo" id="radio-three" value="option3">
                       <label class="form-check-label" for="exampleRadios3">
                         Other
                       </label>
@@ -208,13 +247,13 @@
                 Accepted
               </label>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+              <input class="form-check-input form-radio" type="radio" name="demo1" id="radio-one" value="option1" checked>
               <label class="form-check-label" for="exampleRadios1">
                 Yes
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+              <input class="form-check-input form-radio" type="radio" name="demo1" id="radio-two" value="option2">
               <label class="form-check-label" for="exampleRadios2">
                 No
               </label>
@@ -226,13 +265,13 @@
                 Drugs
               </label>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+              <input class="form-check-input form-radio" type="radio" name="demo2" id="radio-one" value="option1" checked>
               <label class="form-check-label" for="exampleRadios1">
                 Asprin 300MGS
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+              <input class="form-check-input form-radio" type="radio" name="demo2" id="radio-two" value="option2">
               <label class="form-check-label" for="exampleRadios2">
                 Ticagrelor 180MGS
               </label>
@@ -244,13 +283,13 @@
                 Cath Lab
               </label>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+              <input class="form-check-input form-radio" type="radio" name="demo3" id="radio-one" value="option1" checked>
               <label class="form-check-label" for="exampleRadios1">
                 One
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+              <input class="form-check-input form-radio" type="radio" name="demo3" id="radio-two" value="option2">
               <label class="form-check-label" for="exampleRadios2">
                 Two
               </label>
